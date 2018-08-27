@@ -1,0 +1,1090 @@
+
+<!-- saved from url=(0100)http://www.starttest.com/ITDVersions/11.3.0.0/ITDStart.aspx?SVC=2b4b3f8d-d9e7-4802-9d03-a04981562a75 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Test Delivery System</title>
+	<script text="text/javascript">var vFailedScripts = new Array();</script>
+<script src="./Test Delivery System_files/jquery-1.12.3.min.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/jquery-1.12.3.min.js&#39;);"></script>
+<script src="./Test Delivery System_files/Prototypes.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Prototypes.js&#39;);"></script>
+
+<script type="text/javascript">
+var itd = window;
+var vIsProctorLed = false;
+window.name = 'itdtop';
+var vTestName = '3-1936-ENU-1Z0-808-ENU-B.808.2017.05.0-ENU';
+var vTemplateName = '';
+var vLanguage = 'ENU';
+var vSupportedLanguages = 'ENU';
+var vBrowserLanguage = 'en-US';
+var vIsRightToLeft = false;
+var vPostCommentMode = false;
+var vMediaCached = false;
+var itdANData = new Array(
+
+);
+var vQueryStringData = 'MTk5MDg2ODk2NiwxMS4zLjAuMCwxOTM4Njg3LDEwNCwyODA3LEVOVSw0RENEQjU1OS1DQzIxLTQwOEItQjg2NC1DNjFDMTExMjAzNjUsLDAsMCwwLGh0dHBzOi8vd3d3LnN0YXJ0dGVzdC5jb20vZ2F0ZXdheXMvc3RhcnR0ZXN0L2N1c3RvbS92dWUvZXJyb3J1cmwuaHRtLCwyLCwsMA%3d%3d-fV45x9EOViU%3d';
+var vConfigurableTools = 0;
+var vEnabledTools = 0;
+var vDeliveryOptions = 0;
+var vDeliveryOverrides = 0;
+var vPresentationOptions = 16;
+var vCustomOptions = 0;
+var vEquated = true;
+var vStartError = false;
+var vAltDescription = decodeURIComponent("Java%20SE%208%20Programmer%20I");
+var vContinueUrlExists = false;
+var vEnvironment = decodeURIComponent("PRODUCTION");
+var vIsLocalServer = false;
+var vSaveHL=true;
+var itdVariables = {};
+function ITDDynamicOnLoad() {document.oncontextmenu = function () { try { if(typeof insertComment == 'function') insertComment(); } catch(e) {} return false;}
+vSaveCounter = 272;
+ }
+</script>
+<script src="./Test Delivery System_files/ITDTranslations.aspx" type="text/javascript"></script>
+<script type="text/javascript">var vErrorUrl = decodeURIComponent("https%3A%2F%2Fwww.starttest.com%2Fgateways%2Fstarttest%2Fcustom%2Fvue%2Ferrorurl.htm");</script>
+<script src="./Test Delivery System_files/ForceClose.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/ForceClose.js&#39;);"></script>
+<script src="./Test Delivery System_files/SpeechSynthesis.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/SpeechSynthesis.js&#39;);"></script>
+<script src="./Test Delivery System_files/FramesetSkin.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/FramesetSkin.js&#39;);"></script>
+<script src="./Test Delivery System_files/FramesetAnnotation.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/FramesetAnnotation.js&#39;);"></script>
+<script src="./Test Delivery System_files/FramesetHighlighting.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/FramesetHighlighting.js&#39;);"></script>
+<script src="./Test Delivery System_files/FramesetNotes.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/FramesetNotes.js&#39;);"></script>
+<script src="./Test Delivery System_files/XmlHttp.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/XmlHttp.js&#39;);"></script>
+<script src="./Test Delivery System_files/PointClick.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/PointClick.js&#39;);"></script>
+<script src="./Test Delivery System_files/InputAnswer.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/InputAnswer.js&#39;);"></script>
+<script src="./Test Delivery System_files/Essay.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Essay.js&#39;);"></script>
+
+<script language="javascript">
+		//awp
+		var vSaveReadOnlyMode = false;
+		var vSaveReadOnlySet = false;
+		var vPerformITDTimeout = false;
+	
+		function elementFrame()
+		{
+			if (itd.frames["ElementDisplayFrame"].frames.length > 0 && itd.frames["ElementDisplayFrame"].frames["ITSElementDisplay"])
+				return itd.frames["ElementDisplayFrame"].frames["ITSElementDisplay"];
+			else
+				return itd.frames["ElementDisplayFrame"];
+		}
+
+		function lockUI()
+		{
+			itd.itdCurrentLocation = "(lockUIstart)";
+			//add a lock
+			itd.frames["ControlPanelFrame"].numUILocks++;
+			
+			//just in case we release too many somewhere
+			if (itd.frames["ControlPanelFrame"].numUILocks == 1 && !vSaveReadOnlySet)
+			{
+				vSaveReadOnlyMode = elementFrame().vReadOnlyMode;
+				vSaveReadOnlySet = true;
+				elementFrame().vReadOnlyMode = true;
+				elementFrame().vPageReadOnly = true;
+			}
+			
+			if (elementFrame().frames["comment"])
+				elementFrame().frames["comment"].lockComment();
+			
+			itd.itdCurrentLocation = "(lockUIend)";
+		}
+		
+		function unlockUI()
+		{
+			itd.itdCurrentLocation = "(unlockUIstart)";
+			//release a lock
+			itd.frames["ControlPanelFrame"].numUILocks--;
+			
+			//just in case we release too many somewhere
+			if (itd.frames["ControlPanelFrame"].numUILocks < 0)
+				itd.frames["ControlPanelFrame"].numUILocks = 0;
+		
+			if (itd.frames["ControlPanelFrame"].numUILocks == 0)
+			{
+				if( vSaveReadOnlySet )
+				{		
+					elementFrame().vReadOnlyMode = vSaveReadOnlyMode;
+					elementFrame().vPageReadOnly = vSaveReadOnlyMode;
+					vSaveReadOnlySet = false;
+				}
+			
+				if (elementFrame().frames["comment"])
+					elementFrame().frames["comment"].unlockComment();
+			}
+			
+			itd.itdCurrentLocation = "(unlockUIend)";
+		}
+		
+		var vPopUpOpen = false;
+		
+		function closePopUp()
+		{
+			itd.itdCurrentLocation = "(closePopUpstart)";
+			var popup = elementFrame().document.getElementById("popUpDiv");
+			popup.parentNode.removeChild(popup);
+
+			
+			//allow another popup
+			vPopUpOpen = false;
+
+			unlockUI();	//release a ui lock	
+			
+			itd.itdCurrentLocation = "(closePopUpend)";		
+		}
+
+		//a special case.  see commentItem in testing workshop		
+		function closePopUpAndComment()
+		{
+			itd.itdCurrentLocation = "(closePopUpAndCommentstart)";
+			closePopUp();
+			itd.frames["ControlPanelFrame"].closeComment();
+			
+			itd.itdCurrentLocation = "(closePopUpAndCommentend)";
+		}
+		
+		function PopUpOnSubmit()
+		{
+			return false;
+		}
+		
+		/**
+		 * openPopUp arguments:
+		 * 'mesg' is the the message to display
+		 * 'title' is the title of the popup
+		 * arguments 2-... alternate between name of button and function to call when that button is clicked
+		 */
+		function openPopUp(mesg, title)
+		{
+			if (!vPopUpOpen) //don't allow more than one popup div to be open at once
+			{
+				itd.itdCurrentLocation = "(openPopUpstart)";
+				vPopUpOpen = true;
+				
+				var platform = window.navigator.platform.toLowerCase();
+
+				lockUI();	//add a ui lock
+
+				//itd.frames["ControlPanelFrame"].closeComment();
+
+				var popup = elementFrame().document.createElement("div");
+
+				popup.id = "popUpDiv";
+				popup.style.textAlign = "center"; //needed to center in IE
+				popup.style.position = "absolute"; //probably should use "fixed"
+				popup.style.top = "200px";
+				popup.style.width = "100%";       //needed to center in IE
+				popup.style.zIndex = 899;
+
+				var div = elementFrame().document.createElement("div");
+				div.style.border = "2px solid black";
+				div.style.width = "325px";
+				//div.style.height = "225px";				
+				div.style.backgroundColor = "white";
+				div.style.margin = "0 auto";
+				
+				popup.appendChild(div);
+				
+				var html = "<div style='height:30px;width:100%;background-color:#006daa;color:white;text-align:left;font-weight:bold;'><div style='padding-left:10px;padding-top:5px;padding-bottom:5px;'>" + title + "</div></div><div style='padding:15px;text-align:left;'>" + mesg + "</div><br/>";
+				div.innerHTML = html;
+
+				var form = elementFrame().document.createElement("form");
+				form.name = "PopupButtonForm";
+				form.id = "PopupButtonForm";
+				form.onsubmit = PopUpOnSubmit;
+				//form.setAttribute("name", "PopupButtonForm");
+				div.appendChild(form);
+				
+				//add buttons
+				for (i = 2; i < arguments.length; i++)
+				{
+					var button = elementFrame().document.createElement("input");
+					button.type = "button";
+					button.name = "popUpButton" + i;
+					button.id = "popUpButtonId" + i; 
+					button.value = arguments[i]; 		//set label
+					
+					var onClickOnEnterFunction = arguments[++i];
+					button.onclick = onClickOnEnterFunction;	//set function
+			
+					form.appendChild(button);
+					
+					var spacer = elementFrame().document.createElement("span");
+					spacer.innerHTML = "&nbsp;&nbsp;";
+					form.appendChild(spacer);
+				}
+				
+				//show the popup
+				elementFrame().document.body.appendChild(popup);
+
+				elementFrame().focus();
+				
+				itd.itdCurrentLocation = "(openPopUpend)";
+				//would be nice to focus on first button, but doesn't work on ie or mac				
+			}
+		}
+		
+		function disableButtons()
+		   {
+		   }
+		   
+		function enableButtons()
+		   {
+		   }
+		
+		function displayInvalidGotoMessage()
+		{
+			alert("You have entered an invalid question number.");
+		}
+		   
+		function displayNotFound(found)
+		{
+		   if (found > 0)
+			   alert("There are no more matches for the search text.");
+	       else		   
+			   alert("No match was found for the search text.");
+		}
+		   
+		function displayMaxSelectMessage()
+		{
+			alert("You have already selected the maximum number of options allowed.\nYou must deselect an option before selecting this one.");
+		} 
+			
+		function displayInputErrorMessage()
+		{
+			alert("Illegal key entry.");
+		}
+  		
+ 		var vMaxInactiveTime = 1200000; // Inactivity timeout - 45 minutes of inactivity=2700000, 5 minutes=300000, 1 minute=60000
+ 		
+		function InactivityTimeout()
+		{
+		     itd.itdCurrentLocation = "(InactivityTimeout begin)";
+   			 alert("Your test has timed out due to 20 minutes of inactivity.");
+   			 itd.frames["ControlPanelFrame"].quitInactivity();
+   			 itd.itdCurrentLocation = "(InactivityTimeout end)";
+		}		
+		
+		function displayTimeoutMessage() {}
+		   	
+		function getTimeoutAction()
+		{
+			itd.itdCurrentLocation = "(getTimeoutActionstart)";
+			if( !vPerformITDTimeout ) 
+			{	
+				if (!isTimeoutToggled)
+				{
+					itd.toggleTimeoutFrame();
+					itd.timeSpentBeforePause = timeSpent();
+            		itd.stopTiming(false);	
+            	}		
+                return 2;
+			}
+			itd.itdCurrentLocation = "(getTimeoutActionend)";
+			return 0;
+		}   
+
+
+		function confirmNavigation()
+		{
+			itd.itdCurrentLocation = "(confirmNavigation begin)";
+			var vMessage = "Click 'OK' to confirm your answer\(s\) and proceed to the next question.\n\nClick 'Cancel' to remain on this question.";
+			if (confirm(vMessage)) {
+				itd.itdCurrentLocation = "(confirmNavigation end)";
+				return true;
+			} else {
+				itd.itdCurrentLocation = "(confirmNavigation end)";
+				return false;
+			}
+		}
+			
+		function displayRequiredMessage()
+		{
+			itd.itdCurrentLocation = "(displayRequiredMessagestart)";
+			var vMessage;
+			var vMinSelection;
+			var vIndex = 1;
+			
+			//Set Grouped For Display for the majority of the cases
+			var vGroupedForDisplay = (elementFrame().vItemTypeList.length > 2 && elementFrame().vIsScorable);
+
+			//Make sure the Grouped For Display is not just a Display and a question
+			if(elementFrame().vItemTypeList.length == 3 && elementFrame().vItemTypeList[1] == 'Display')
+				{
+				vGroupedForDisplay = false;
+				vIndex = 2;
+				}
+				
+			//Get the main Item Type for this page
+			var vItemType = elementFrame().vItemTypeList[vIndex].toLowerCase();
+
+			if (vGroupedForDisplay)
+				vMessage = "You must answer every question to continue.";
+			else
+			{
+				switch (vItemType)
+				{	
+					case "essay":
+						vMessage = "You must upload a file.";
+						break;
+					case "passageselect":
+						vMessage = "You must select a sentence in \nthe passage by clicking on it.";
+						break;
+					case "multiplechoice":
+						switch (elementFrame().vItemMinimumSelection[vIndex])
+						{
+							case 1:
+								vMinSelection = "one";
+								break;
+							case 2:
+								vMinSelection = "two";
+								break;
+							case 3:
+								vMinSelection = "three";
+								break;
+							case 4:
+								vMinSelection = "four";
+								break;
+							case 5:
+								vMinSelection = "five";
+								break;
+							case 6:
+								vMinSelection = "six";
+								break;
+							case 7:
+								vMinSelection = "seven";
+								break;
+							case 8:
+								vMinSelection = "eight";
+								break;
+							case 9:
+								vMinSelection = "nine";
+								break;
+							case 10:
+								vMinSelection = "ten";
+								break;
+						}	
+						
+						if ((elementFrame().vItemMinimumSelection[vIndex] == elementFrame().vItemMaximumAllowed[vIndex]) || elementFrame().vItemMaximumAllowed[vIndex] == 0)
+							{
+							//var vBtnYes = window.showModalDialog("itd.aspx?cmd=display&URID=" + window.itd.vTestName + "/Dialog_AnswerRequired" + "&data=" + itd.vQueryStringData, 'Answer Required', 'dialogWidth=440px;dialogHeight=150px;scrollbars=no;border=thin;help=no;status=no');
+							window.alert("You cannot continue with this question unanswered.");
+							break;
+						}
+					default:
+						vMessage = "You must complete your answer to this question to continue.";
+						break;
+				}
+			}
+			itd.itdCurrentLocation = "(displayRequiredMessageend)";
+		}
+		
+		function exitTest(type)
+		   {
+		   }
+		   
+		function setCursors(cursor)
+		   {
+		   }
+		   
+		var PopSTime;
+		var PopTTime;
+		var PopCurrentSection;
+		function setTime(stime,ttime)
+		{	
+										
+			window.itd.frames["InfoPanelFrame"].setTime(stime);
+		
+		}
+		   
+		function convertMilliseconds (milliseconds)
+		{
+			// *********************************************
+			// Convert milliseconds to hours seconds and minutes 
+			// and return in the form "12hr 55min 15sec"
+			// *********************************************
+
+			var milliInHour = 3600000;
+			var milliInMin = 60000;
+			var milliInSec = 1000;
+			var hours = Math.floor(milliseconds / milliInHour);    
+			var minutes = Math.floor((milliseconds - (hours * milliInHour)) / milliInMin);
+			var seconds = Math.floor((milliseconds  - (hours * milliInHour) - (minutes * milliInMin)) / milliInSec);
+			var time;
+			
+			var tmpHours, tmpMins, tmpSecs;
+			//padd hour
+			if(hours < 10) tmpHours = "0" + hours;
+			else tmpHours = hours;
+			//padd min
+			if(minutes < 10) tmpMins = "0" + minutes;
+			else tmpMins = minutes;
+			//pad sec
+			if(seconds < 10) tmpSecs = "0" + seconds;
+			else tmpSecs = seconds; 
+									
+			if (hours)
+			   time = tmpHours + ":" + tmpMins + ":" + tmpSecs;			
+			else if (minutes)
+		       time = tmpMins + ":" + tmpSecs;		    
+		    else
+		       time = "00:" + tmpSecs;
+		
+			vTimeLeft = milliseconds;
+			return "Time Remaining&nbsp;"  + time;				
+			
+
+			if (hours)
+			   time = hours + ":" + minutes + ":" + seconds;
+		
+			else if (minutes)
+		       		time = minutes + ":" + seconds;
+		    
+		    	else
+		       		time = "00:" + seconds;
+		
+			return "Time Remaining&nbsp;"  + time;
+
+			if(time == "05:00") {
+				window.itd.frames["InfoPanelFrame"].clockwarning = 1;
+				window.itd.frames["InfoPanelFrame"].liteTimer();
+				window.itd.frames["InfoPanelFrame"].toggleTimer();				
+			}
+			return "Time Remaining&nbsp;"  + time;						
+		}
+		
+		function showNavGraphic()
+		   {		 
+		   }
+		   
+
+		function hideNavGraphic()
+		   {
+		   }
+
+		function resetSearchBox()
+		   {
+		   }
+		
+		function displayMark() {
+		    itd.itdCurrentLocation = "(displayMarkstart)";
+			var targetFrame = elementFrame();
+			if (targetFrame.vReviewAllowed && targetFrame.vMarkingAllowed && !targetFrame.vIsReview && targetFrame.vItemType != 'Essay' && targetFrame.vIsScorable)
+			{		
+				//Clear or Check Mark Button 
+				if(!targetFrame.vMarkPage)
+					itd.frames["ControlPanelFrame"].showMark();
+				else
+					itd.frames["ControlPanelFrame"].showUnMark();
+			}
+			itd.itdCurrentLocation = "(displayMarkend)";		
+		}
+		
+		function displayReview() {
+			if(elementFrame().vReviewAllowed) {
+				itd.itdCurrentLocation = "(displayReview begin)";
+				itd.frames["ControlPanelFrame"].showBtn('Review');
+				itd.itdCurrentLocation = "(displayReview end)";
+			} 	
+		}
+
+ 		var blnSafari = false;
+ 		
+ 		if(window.navigator.userAgent.indexOf('Safari') != -1) blnSafari = true;
+		
+		var isReviewCompleteToggled = false;
+		function updatePanels()
+		   {
+		    itd.itdCurrentLocation = "(updatePanelsstart)";
+		    
+		    if( isReviewCompleteToggled ) {
+				var mainframe = document.getElementById("mainframe");
+				mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+				isReviewCompleteToggled = false;
+		    }
+	
+   			vPerformITDTimeout = false;
+
+		    //Variable Declaration
+			var vQuestionText;
+			
+			//be sure ui is unlocked, and inactivity timer is reset
+			vPopUpOpen = false;
+			itd.frames["ControlPanelFrame"].numUILocks = 0;
+			unlockUI();
+			
+			//Get User Interface Type
+			var vUIType = elementFrame().vUIType.toLowerCase();
+			
+			//Set Document Title
+			//itd.document.title = elementFrame().vExamTitle;
+									
+			//Build Question Number Text
+			var vQuestion = elementFrame().vQuestionNumber;
+			vQuestion = vQuestion.replace("of","of");
+
+			vQuestionText = (vQuestion.length > 0) ? vQuestion : "";
+
+			//Build Item Key Text
+			if (elementFrame().vIsScorable && !elementFrame().vIsReview && elementFrame().vItemType != 'Display' && !elementFrame().vInSurvey && (elementFrame().vDeliveryOptions & 4) == 4)
+				vItemKey = (" - " + (elementFrame().document.forms[0].elements['Key1'].value));
+			else
+				vItemKey = '';
+
+			//Build Item Name Text
+			if (!elementFrame().vIsReview && (elementFrame().vDeliveryOptions & 4) == 4)
+				vItemID = elementFrame().vItemName;
+			else
+				vItemID = '';
+
+			//Build Max Select Message
+			if (elementFrame().vIsScorable && !elementFrame().vIsReview && elementFrame().vItemType != 'Display' && !elementFrame().vInSurvey)
+			{
+				if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 1)
+					vMaxSelectMessage = "Choose the best answer.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 2 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 2)
+					vMaxSelectMessage = "Choose two.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 3 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 3)
+					vMaxSelectMessage = "Choose three.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 4 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 4)
+					vMaxSelectMessage = "Choose four.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 5 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 5)
+					vMaxSelectMessage = "Choose five.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 6 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 6)
+					vMaxSelectMessage = "Choose six.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value == 7 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 7)
+					vMaxSelectMessage = "Choose seven.";
+				else if (elementFrame().document.forms[0].elements['MaxSelectionAllowed'].value > 1 && elementFrame().document.forms[0].elements['MinSelectionRequired'].value == 1)
+					vMaxSelectMessage = "Choose all that apply.";
+				else
+					vMaxSelectMessage = "Choose the best answer.";
+			}
+			else
+			{
+				vMaxSelectMessage = '';
+			}
+				
+			//Set InfoPanel Text
+			itd.frames["InfoPanelFrame"].setInfoText(vQuestionText);
+			itd.frames["InfoPanelFrame"].setItemName(vItemID);
+			itd.frames["InfoPanelFrame"].setItemKey(vItemKey);
+			itd.frames["InfoPanelFrame"].setMaxSelectMessage(vMaxSelectMessage);
+			
+			itd.frames["ControlPanelFrame"].hideAllBtns();
+			
+			
+			//Set up Solutions
+			if (elementFrame().vSolutionsAllowed && elementFrame().vIsScorable && !elementFrame().vIsReview && elementFrame().vItemType != 'Display')
+				itd.frames["ControlPanelFrame"].displaySolutions();
+	
+						
+			//Set up Marking
+			//alert('marking allowed - ' + elementFrame().vMarkingAllowed + ' scorable - ' + elementFrame().vIsScorable);
+			
+			if (elementFrame().vMarkingAllowed && !elementFrame().vIsReview && elementFrame().vItemType != 'Display' && (elementFrame().vIsScorable || targetFrame.vInTutorial))
+			{
+				itd.frames["InfoPanelFrame"].showGuess();		
+				//Clear or Check Mark Button 
+				if(elementFrame().vMarkPage)
+					itd.frames["InfoPanelFrame"].checkGuess();
+				else
+					itd.frames["InfoPanelFrame"].clearGuess();
+			}
+			else
+				itd.frames["InfoPanelFrame"].hideGuess();
+
+			//Show Comment for content review mode
+			if ((elementFrame().vDeliveryOptions & 8192) == 8192)
+				itd.frames["ControlPanelFrame"].showBtn('comment');
+			
+			itd.itdCurrentLocation = "(updatePanelsBeforeSwitchStatement-vUIType: " + vUIType + ")";
+			//Display Buttons/Text Based on UserInterface Type
+			switch (vUIType)
+				{	
+				case "introduction":
+					itd.frames["ControlPanelFrame"].showBtn('previous', 'next');
+					itd.frames["InfoPanelFrame"].hideGuess3();				
+				   	break;
+				case "upload":
+					itd.frames["ControlPanelFrame"].showBtn('next');
+					if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');				
+				   	break;
+				case "confirmupload":
+					itd.frames["ControlPanelFrame"].showBtn();
+					if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');				
+				   	break;    	   	
+				case "introscreen":
+					itd.frames["ControlPanelFrame"].showBtn('help', 'next');
+					itd.frames["InfoPanelFrame"].hideGuess3();
+					if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');				
+				   	break;   		
+				case "introduction2":
+					itd.frames["ControlPanelFrame"].showBtn('dontagree','agree');
+					itd.frames["InfoPanelFrame"].hideGuess3();				
+				   	break;
+				case "survey":
+					itd.frames["ControlPanelFrame"].showBtn('previous', 'next');
+					itd.frames["InfoPanelFrame"].hideGuess3();	
+					itd.frames["InfoPanelFrame"].hideTime();			
+				   	break;
+				case "end":
+					itd.frames["ControlPanelFrame"].showBtn('previous', 'next');
+					itd.frames["InfoPanelFrame"].hideTime();
+					itd.frames["InfoPanelFrame"].hideInfo();
+					itd.frames["InfoPanelFrame"].hideGuess3();				
+				   	break;		   	
+				case "endsample":
+					itd.frames["ControlPanelFrame"].showBtn('end');
+					itd.frames["InfoPanelFrame"].hideTime();
+					itd.frames["InfoPanelFrame"].hideInfo();
+					itd.frames["InfoPanelFrame"].hideGuess3();				
+				   	break;		   	
+				case "tutorial":
+					itd.frames["ControlPanelFrame"].showBtn('help','next');
+					itd.frames["InfoPanelFrame"].hideGuess3();
+				   	break;
+				case "tutorial2":
+					itd.frames["ControlPanelFrame"].showBtn('help','previous','next');
+					itd.frames["InfoPanelFrame"].hideGuess3();
+				   	break;
+				case "tutorial3":
+					itd.frames["ControlPanelFrame"].showBtn('help','previous','next');
+				   	break;
+				case "scorereport":
+				   	itd.frames["ControlPanelFrame"].showBtn('end');
+					if((itd.vCustomOptions & 1) == 0)
+					   	itd.frames["ControlPanelFrame"].showBtn('print')
+					itd.frames["InfoPanelFrame"].hideGuess3();
+					itd.frames["InfoPanelFrame"].hideTime();
+					itd.frames["InfoPanelFrame"].hideInfo();
+			 		break;
+			 	case "endexam":
+				   	itd.frames["ControlPanelFrame"].showBtn('end');
+                	if((itd.vCustomOptions & 1) == 0)
+                                itd.frames["ControlPanelFrame"].showBtn('print')
+					itd.frames["InfoPanelFrame"].hideGuess3();
+					itd.frames["InfoPanelFrame"].hideTime();
+					itd.frames["InfoPanelFrame"].hideInfo();
+			 		break;	
+			 	case "scorereportnoprint":
+				   	itd.frames["ControlPanelFrame"].showBtn('endnoprint');
+					itd.frames["InfoPanelFrame"].hideTime();
+					itd.frames["InfoPanelFrame"].hideInfo();
+					itd.frames["InfoPanelFrame"].hideGuess3();	
+			 		break;	
+				case "scorereportviewonly":
+				   	itd.frames["ControlPanelFrame"].showBtn('end');
+					if((itd.vCustomOptions & 1) == 0)
+					   	itd.frames["ControlPanelFrame"].showBtn('print')
+					itd.frames["InfoPanelFrame"].hideGuess3();
+					itd.frames["InfoPanelFrame"].hideTime();
+					itd.frames["InfoPanelFrame"].hideInfo();
+			 		break;
+				case "review":
+					if(elementFrame().vReviewUnansweredAllowed)
+						itd.frames["ControlPanelFrame"].showBtn('reviewincomplete');
+			
+					if(elementFrame().vReviewMarkedAllowed) 
+						itd.frames["ControlPanelFrame"].showBtn('reviewguess');
+						
+					itd.frames["ControlPanelFrame"].showBtn('reviewall','finish2');	
+					itd.frames["InfoPanelFrame"].hideGuess3();
+						//if(elementFrame().vAllowPrevious)
+						//	itd.frames["ControlPanelFrame"].showBtn('Back');														
+				   	break;		
+				case "review2":
+					if(elementFrame().vReviewUnansweredAllowed)
+						itd.frames["ControlPanelFrame"].showBtn('reviewincomplete');
+			
+					if(elementFrame().vReviewMarkedAllowed) 
+						itd.frames["ControlPanelFrame"].showBtn('reviewguess');
+						
+					itd.frames["ControlPanelFrame"].showBtn('reviewall','finish3');	
+					itd.frames["InfoPanelFrame"].hideGuess3();
+						//if(elementFrame().vAllowPrevious)
+						//	itd.frames["ControlPanelFrame"].showBtn('Back');														
+				   	break;
+				case "questions":
+					if(itd.elementFrame().vReviewToCaller)
+					{
+						itd.frames["ControlPanelFrame"].showBtn('help','next','review');
+						itd.frames["InfoPanelFrame"].showInfo();
+						if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');
+					}	
+					else	
+						itd.frames["ControlPanelFrame"].showBtn('help','next','review');
+						if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');	
+				   	break;
+				case "questionsend":
+					if(top.elementFrame().vReviewToCaller)
+					{
+						top.frames["ControlPanelFrame"].showBtn('help','endnoprint');
+						top.frames["InfoPanelFrame"].showInfo();
+						if(elementFrame().vAllowPrevious)
+							top.frames["ControlPanelFrame"].showBtn('previous');
+					}	
+					else	
+						top.frames["ControlPanelFrame"].showBtn('help','endnoprint');
+						if(elementFrame().vAllowPrevious)
+							top.frames["ControlPanelFrame"].showBtn('previous');	
+				   	break;	
+				case "introsection":
+						top.frames["ControlPanelFrame"].showBtn('help','next');
+						if(elementFrame().vAllowPrevious)
+							top.frames["ControlPanelFrame"].showBtn('previous');	
+				   	break;
+				case "questionscomment":
+					if(itd.elementFrame().vReviewToCaller)
+					{
+						itd.frames["ControlPanelFrame"].showBtn('help','next','review','comment');
+						itd.frames["InfoPanelFrame"].showInfo();
+						if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');
+					}	
+					else	
+						itd.frames["ControlPanelFrame"].showBtn('help','next','review','comment');
+						if(elementFrame().vAllowPrevious)
+							itd.frames["ControlPanelFrame"].showBtn('previous');	
+				   	break;
+				default:							
+					//Determine whether to display Score Report Button
+					if(itd.elementFrame().vInReviewMode)
+						itd.frames["ControlPanelFrame"].showBtn('help','score','previous','next');	
+					else	
+						itd.frames["ControlPanelFrame"].showBtn('help','next');	
+					break;
+				}
+				itd.itdCurrentLocation = "(updatePanelsAfterSwitchStatement)";
+								
+				if(!elementFrame().vAllowPrevious)
+					itd.frames["ControlPanelFrame"].hideBtn('previous');
+				
+				if(blnSafari) itd.focus();
+				
+				//if we were navigating when timeout is called we need to hide the buttons
+				if (isTimeoutToggled)			
+					itd.frames["ControlPanelFrame"].hideAllBtns();
+				
+				itd.itdCurrentLocation = "(updatePanelsend)";			
+             }
+ 		
+		function ITDCustomKeyHandler(e)
+		{
+			itd.itdCurrentLocation = "(ITDCustomKeyHandlerstart)";
+			var vUIType = elementFrame().vUIType.toLowerCase();
+			
+			if( !itd.itdLoadComplete || itd.isNavigating || (typeof e.srcElement != "undefined" && (e.srcElement.type == "text" || e.srcElement.type == "textarea" || e.srcElement.type == "password"))) 
+				return false;
+
+			var vModifiedKeyCode = e.modifiedKeyCode;
+			var vKeyCode = e.keyCode;
+			var vCtrlKey = e.ctrlKey;
+			var vAltKey = e.altKey;
+			var eFrame = elementFrame();
+			
+			if( eFrame && !vCtrlKey && !vAltKey )
+			{	itd.itdCurrentLocation = "(ITDCustomKeyHandlerbeforeswitch-vModifiedKeyCode: " + vModifiedKeyCode + ")";
+			 	switch( vModifiedKeyCode )
+			 	{
+			    	case 32: // Space key
+				    	//Do Nothing.  We want to ignore the space key.
+				    	return true;
+		
+			    	case 78: // N = Next
+				    	//don't allow navigation when timeout frame is displayed
+				    	if (isTimeoutToggled)
+				    		return true;	
+				    			    	
+			    	    if(vUIType != "introduction2" && vUIType != "scorereport" && vUIType != "scorereportviewonly" && vUIType != "review" && (typeof eFrame.itemTotal == "undefined" || eFrame.itemTotal <= 1 || eFrame.vCurItemSeq == eFrame.itemTotal ) && itd.frames["ControlPanelFrame"].numUILocks <= 0)
+			        	{
+				            // User Interface Next Navigation Logic
+				            itd.frames["ControlPanelFrame"].localNavigateTD('next');
+				            
+				            if(itd.elementFrame().validateNavigation('next') != 0) 
+							{
+								itd.frames["ControlPanelFrame"].closeExhibit();
+							}
+				        }
+
+						return true;
+				    
+				    case 80: // P = Previous
+				    	//don't allow navigation when timeout frame is displayed
+				    	if (isTimeoutToggled)
+				    		return true;
+				    		
+				    	if (vUIType != "introduction2" && vUIType != "scorereport" && vUIType != "scorereportviewonly" && vUIType != "review" && itd.frames["ControlPanelFrame"].numUILocks <= 0)
+				    	{
+							if(eFrame.vUIType.toLowerCase() == 'review')
+							{
+							    itd.frames["ControlPanelFrame"].localNavigateTD('return');   
+							}
+					    	else if( elementFrame().vAllowPrevious )
+						    {
+								if( typeof eFrame.itemTotal == "undefined" || eFrame.itemTotal <= 1 || eFrame.vCurItemSeq <= 1 )
+				    	    	{
+									// User Interface Previous Navigation Logic
+								    itd.frames["ControlPanelFrame"].localNavigateTD('back');
+								    itd.frames["ControlPanelFrame"].closeExhibit();
+					        	}
+						    }
+							return true;
+			    		}
+			    		
+				    default:
+				    	break;
+			    }
+			    itd.itdCurrentLocation = "(ITDCustomKeyHandlerafterswitch)";
+			 }
+		     itd.itdCurrentLocation = "(ITDCustomKeyHandlerend)";
+			 return false;
+		}             
+ 		/*
+ 		function handleAdditionalKeys(e) 
+		{
+			if( !itd.itdLoadComplete || itd.isNavigating || (typeof e.srcElement != "undefined" && (e.srcElement.type == "text" || e.srcElement.type == "textarea" || e.srcElement.type == "password"))) 
+				return false;
+				
+			//Get User Interface Type
+			var eFrame = elementFrame();
+			var vUIType = eFrame.vUIType.toLowerCase();
+			var vKeyCode = e.keyCode;
+				
+			if (vKeyCode == 72) 
+			{
+				//alert('Does this hit twice?');
+				//alert("H");
+				itd.frames["ControlPanelFrame"].displayHelp();
+			} 
+			else if (vKeyCode == 78)
+			{
+				if (vUIType == 'introduction' || vUIType == 'tutorial2' || vUIType == 'tutorial3' || vUIType == 'solutions' || vUIType == 'tutorial' || vUIType == 'default' || vUIType == 'questions') 
+				//alert("N");
+					navigateTD('next');
+			} 
+			else if (vKeyCode == 80)
+			{	
+				//alert("P");
+				if (elementFrame().vAllowPrevious)
+					itd.navigateTD('back');
+			}	
+			else if (vKeyCode == 83)
+			{
+					//alert("S")
+				displayReview();
+			} 
+			else if (vKeyCode == 71) 
+			{
+				//alert('Guess works');
+				//alert("G");
+				itd.frames["InfoPanelFrame"].toggleGuess();
+			}
+			
+			e.returnValue = false; 
+		}     
+		*/
+		//NEW DoNotAgree FRAME 
+		var isDoNotAgreeToggled = false;
+		function toggleDoNotAgreeFrame()
+		{
+		    itd.itdCurrentLocation = "(toggleDoNotAgreeFramestart)";
+			var mainframe = document.getElementById("mainframe");
+			
+			if( !isDoNotAgreeToggled )
+			{
+				mainframe.cols = "17,0,0,0,0,0,0,0,*,19";
+				isDoNotAgreeToggled = true;
+				itd.frames["ControlPanelFrame"].hideAllBtns();
+			}
+			else
+			{
+				mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+				isDoNotAgreeToggled = false;
+				updatePanels();
+			}
+			itd.itdCurrentLocation = "(toggleDoNotAgreeFrameend)";
+		}	
+		
+		//NEW PAUSE FRAME 
+		var isPausedToggled = false;
+		function togglePauseFrame()
+		{
+		    itd.itdCurrentLocation = "(togglePauseFramestart)";
+			var mainframe = document.getElementById("mainframe");
+			if( !isPausedToggled )
+			{
+				mainframe.cols = "17,0,0,0,*,0,0,0,0,19";
+				isPausedToggled = true;
+				itd.frames["ControlPanelFrame"].hideAllBtns();
+			}
+			else
+			{
+				mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+				isPausedToggled = false;
+				updatePanels();
+			}
+			itd.itdCurrentLocation = "(togglePauseFrameend)";
+		}	
+		
+		//Review Complete Frame
+		function toggleReviewCompleteFrame()
+		{
+			itd.itdCurrentLocation = "(toggleReviewCompleteFramestart)";
+			var mainframe = document.getElementById("mainframe");
+			if( !isReviewCompleteToggled )
+			{
+				mainframe.cols = "17,0,0,0,0,*,0,0,0,19";
+				isReviewCompleteToggled = true;
+				itd.frames["ControlPanelFrame"].hideAllBtns();
+			}
+			else
+			{
+				mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+				isReviewCompleteToggled = false;
+				updatePanels();
+			}
+			itd.itdCurrentLocation = "(toggleReviewCompleteFrameend)";
+		}
+		
+		function exitReviewScreen()
+		{
+			itd.itdCurrentLocation = "(exitReviewScreenstart)";
+			var mainframe = document.getElementById("mainframe");
+			mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+			isReviewIncompleteToggled = false;
+			updatePanels();
+			itd.itdCurrentLocation = "(exitReviewScreenend)";
+		}
+
+		function toggleEndReviewCompleteFrame()
+		{	
+			itd.itdCurrentLocation = "(toggleEndReviewCompleteFramestart)";
+			navigateTD('exitsection');
+			itd.itdCurrentLocation = "(toggleEndReviewCompleteFrameend)";
+		}
+
+		function toggleEndReviewIncompleteFrame()
+		{
+			itd.itdCurrentLocation = "(toggleEndReviewIncompleteFramestart)";
+			navigateTD('exitsection');
+			itd.itdCurrentLocation = "(toggleEndReviewIncompleteFramestop)";
+		}
+
+		//Review Timeout Frame
+		var isTimeoutToggled = false;
+		function toggleTimeoutFrame()
+		{
+			itd.itdCurrentLocation = "(toggleTimeoutFramestart)";
+			var mainframe = document.getElementById("mainframe");
+			if( !isTimeoutToggled )
+			{
+				isTimeoutToggled = true;			
+				mainframe.cols = "17,0,0,0,0,0,0,*,0,19";
+				itd.frames["ControlPanelFrame"].hideAllBtns();
+			}
+			else
+			{
+				mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+				isTimeoutToggled = false;
+				updatePanels();
+			}
+			itd.itdCurrentLocation = "(toggleTimeoutFrameend)";
+		}
+		
+		function closeTimeoutFrameExit()
+		{
+			itd.itdCurrentLocation = "(closeTimeoutFrameExitstart)";
+			//alert('exit');
+			var mainframe = document.getElementById("mainframe");
+			mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+			isTimeoutToggled = false;
+			vPerformITDTimeout = true;
+            elementFrame().document.forms[0].TimeoutAction.value = 0;
+			itd.navigateTD('TIMEOUT');
+			//updatePanels();
+			itd.itdCurrentLocation = "(closeTimeoutFrameExitend)";
+		}
+
+		function closeTimeoutFrameRemain()
+		{
+			itd.itdCurrentLocation = "(closeTimeoutFrameRemainstart)";
+			var mainframe = document.getElementById("mainframe");
+			//alert('remain');
+			mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+			isTimeoutToggled = false;
+			itd.frames["InfoPanelFrame"].hideTime();
+			updatePanels();
+			itd.itdCurrentLocation = "(closeTimeoutFrameRemainend)";
+		}
+		
+		//Help Frame Toggle
+		var isSkipTutToggled = false;
+		function toggleSkipTutFrame()
+		{
+			itd.itdCurrentLocation = "(toggleSkipTutFramestart)";
+			var mainframe = document.getElementById("mainframe");
+			if( !isSkipTutToggled )
+			{
+				mainframe.cols = "17,0,0,*,0,0,0,0,19";
+				isSkipTutToggled = true;
+				itd.frames["ControlPanelFrame"].hideAllBtns();
+			}
+			else
+			{
+				mainframe.cols = "17,*,0,0,0,0,0,0,19";
+				isSkipTutToggled = false;
+				updatePanels();
+			}
+			itd.itdCurrentLocation = "(toggleSkipTutFrameend)";
+		}
+
+		//Help Frame Toggle
+		var isHelpToggled = false;
+		function toggleHelpFrame()
+		{
+			itd.itdCurrentLocation = "(toggleHelpFramestart)";
+			var mainframe = document.getElementById("mainframe");
+			if( !isHelpToggled )
+			{
+				mainframe.cols = "17,*,50%,0,0,0,0,0,0,19";
+				isHelpToggled = true;
+			}
+			else
+			{
+				mainframe.cols = "17,*,0,0,0,0,0,0,0,19";
+				isHelpToggled = false;
+			}
+			itd.itdCurrentLocation = "(toggleHelpFrameend)";
+		}
+		
+	</script>
+</head>
+
+<frameset rows="82,*,32" border="0" onload="if( typeof ITDFramesetAction == &#39;function&#39; ) ITDFramesetAction();">
+	<frame name="InfoPanelFrame" noresize="" scrolling="no" src="./Test Delivery System_files/itd.html">
+	<frameset name="mainframe" id="mainframe" cols="17,*,0,0,0,0,0,0,0,19" border="0" onload="if( typeof ITDFramesetAction == &#39;function&#39; ) ITDFramesetAction();">
+		<frame name="blue_left" noresize="" src="./Test Delivery System_files/itd(1).html">
+		<frame name="ElementDisplayFrame" noresize="" src="./Test Delivery System_files/itd(2).html">
+		<frame name="HelpFrame" style="border-left:1px solid" noresize="" src="./Test Delivery System_files/itd(3).html">
+		<frame name="SkipTutFrame" noresize="" src="./Test Delivery System_files/itd(4).html">
+		<frame name="PauseFrame" src="./Test Delivery System_files/itd(5).html" noresize="" scrolling="NO">
+		<frame name="ReviewCompleteFrame" src="./Test Delivery System_files/itd(6).html" noresize="" scrolling="NO">
+		
+		<frame name="ReviewCriticalFrame" src="./Test Delivery System_files/itd(7).html" noresize="" scrolling="NO">
+		
+		<frame name="TimeoutFrame" src="./Test Delivery System_files/itd(8).html" noresize="" scrolling="NO">
+		<frame name="DoNotAgreeFrame" src="./Test Delivery System_files/itd(9).html" noresize="" scrolling="NO">
+		<frame name="blue_right" noresize="" src="./Test Delivery System_files/itd(10).html">
+	</frameset>
+	<frame name="ControlPanelFrame" noresize="" scrolling="no" src="./Test Delivery System_files/itd(11).html">
+<!--New Frames-->
+</frameset>
+
+<noframes>
+	Sorry, an updated browser is required to display frames.
+</noframes>
+
+</html>
